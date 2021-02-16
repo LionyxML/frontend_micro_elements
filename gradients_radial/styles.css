@@ -1,0 +1,13 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: rgb(70, 184, 167);
+  background: radial-gradient(
+    circle,
+    rgb(70, 184, 167, 1) 0%,
+    rgb(55, 80, 219, 1) 100%
+    )
+}
