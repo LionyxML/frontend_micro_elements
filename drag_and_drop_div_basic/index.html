@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <script src="script.js"></script>
+  <title>Moving divs</title>
+</head>
+<body>
+
+<h1>Drag your card between spaces</h1>
+
+<div class="container">
+  <div class="row">
+
+    <div id="todo" class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+      <div class="col-title">TODO</div>
+
+      <div id="task1" class="task-card" draggable="True" ondragstart="drag(event)">
+        <div class="task-icon fas fa-cat"></div>
+        <div class="task-title">
+          Take pets to the vet!
+        </div>
+        <div class="task-date">
+          Today
+        </div>
+      </div>
+
+      <div id="task2" class="task-card" draggable="True" ondragstart="drag(event)">
+        <div class="task-icon fas fa-sink"></div>
+        <div class="task-title">
+          Do the dishes.
+        </div>
+        <div class="task-date">
+          Today
+        </div>
+      </div>
+
+      <div id="task3" class="task-card" draggable="True" ondragstart="drag(event)">
+        <div class="task-icon fas fa-feather-alt"></div>
+        <div class="task-title">
+          Work on my novel
+        </div>
+        <div class="task-date">
+          Today
+        </div>
+      </div>
+
+      <div id="task4" class="task-card" draggable="True" ondragstart="drag(event)">
+        <div class="task-icon fa fa-mail-bulk"></div>
+        <div class="task-title">
+          Go to the post office.
+        </div>
+        <div class="task-date">
+          Today
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div id="done" class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div class="col-title">DONE</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
