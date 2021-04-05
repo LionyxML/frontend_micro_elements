@@ -28,10 +28,8 @@ body {
   object-fit: cover;
   border-radius: 20px;
   transition: opacity 2s;
-}
-
-.hidden {
   opacity: 0;
+  box-shadow: 2px 2px 8px rgb(255, 255, 255, 0.8);
 }
 
 .shown {
