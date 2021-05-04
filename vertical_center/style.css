@@ -1,0 +1,80 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: Indigo;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+h2 {
+  color: Lavender;
+  margin: 0;
+  padding: 0;
+  line-height: 4rem;
+}
+
+
+.table,
+.absolute,
+.flexbox,
+.grid,
+.margin {
+  border: 2px solid Lavender;
+  width: 50vw;
+  text-align: center;
+  margin: 4rem;
+  height: calc(100vh - 4rem - 8rem);
+}
+
+/* Acutal centering info is down here */
+
+.table {
+  display: table;
+}
+
+.table p {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.absolute {
+  position: relative;
+}
+
+.absolute p {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  /* align-items: center;
+  justify-content: center; */
+  place-items: center;
+}
+
+.margin {
+  display: grid;   /* or flex */
+}
+
+.margin p {
+  margin: auto;
+}
