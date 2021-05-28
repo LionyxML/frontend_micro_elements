@@ -20,3 +20,18 @@ body {
   height: 10rem;
   clip-path: polygon(100% 0, 100% 72%, 0 100%, 0 100%, 0 0);
 }
+
+.grid {
+  margin: 5rem auto;
+  width: min(90%, 75rem);
+  display: grid;
+  /* grid-template-columns: 33% 33% 33%; */
+  grid-auto-flow: row;
+  gap: 2rem;
+}
+
+@media (min-width: 35em) {
+  .grid {
+    grid-auto-flow: column;
+  }
+}
