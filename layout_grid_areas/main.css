@@ -36,11 +36,24 @@ footer {
 /* From here on, starts the exploration  */
 body {
     display: grid;
-    grid-template-columns: 1.5em minmax(400px, 650px) minmax(200px, 350px) 1.5em;
+    grid-template-columns: 1em 1fr 1em;
     grid-template-areas:
-      "header header header header"
-      "...... main   side   ......"
-      "footer footer footer footer"
+      "header header header"
+      "...... main   ......"
+      "...... side   ......"
+      "footer footer footer"
+}
+
+
+@media only screen and (min-width: 860px) {
+  body {
+      display: grid;
+      grid-template-columns: 1.5em minmax(400px, 650px) minmax(200px, 350px) 1.5em;
+      grid-template-areas:
+        "header header header header"
+        "...... main   side   ......"
+        "footer footer footer footer"
+  }
 }
 
 header {
