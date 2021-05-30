@@ -31,3 +31,34 @@ header {
 footer {
   background-color: #333;
 }
+
+
+/* From here on, starts the exploration  */
+body {
+    display: grid;
+    grid-template-columns: 1.5em minmax(400px, 650px) minmax(200px, 350px) 1.5em;
+    grid-template-areas:
+      "header header header header"
+      "...... main   side   ......"
+      "footer footer footer footer"
+}
+
+header {
+  /* grid-column: 1 / 5; */
+  grid-area: header;
+}
+
+footer {
+  /* grid-column: 1 / 5; */
+  grid-area: footer;
+}
+
+.main-content {
+  /* grid-column: 2 / 3; */
+  grid-area: main;
+}
+
+.sidebar {
+  /* grid-column: 3 / 4; */
+  grid-area: side;
+}
