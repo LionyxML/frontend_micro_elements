@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  background-color: white;
+}
+
+.card {
+  width: 16rem;
+  height: 14rem;
+  padding: 2rem;
+  background-color: white;
+
+  box-shadow: 0 0 0 10px #ee6352, 0 0 0 20px #d45379, 0 0 0 30px #a4558f,
+    0 0 0 40px #405378;
+
+  border-radius: 10px;
+}
