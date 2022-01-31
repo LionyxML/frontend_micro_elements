@@ -23,6 +23,7 @@ header {
 
 .background,
 .foreground {
+  margin-left: -20px;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -41,12 +42,13 @@ header {
 .title {
   font-size: 7rem;
   color: white;
-  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 2rem rgb(31, 69, 31);
 }
 
 section {
-  font-size: 2rem;
+  font-size: 1rem;
+  line-height: 1.7rem;
   padding: 2rem;
-  background-color: #333;
+  background-color: rgb(31, 69, 31);
   color: white;
 }
